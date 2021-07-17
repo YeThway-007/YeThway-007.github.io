@@ -1,0 +1,212 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lineHeight2 {
+  line-height: 2;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     padding: 0;
+     margin: 0;
+}
+
+li {
+     cursor: pointer;
+}
+
+.section-title {
+     margin-left: -33px;
+     cursor: pointer;
+     transition: all 0.4s;
+     display: inline-block;
+}
+
+.section-title:hover {
+     margin-left: 0px !important;
+     color: rgb(65, 65, 65) !important;
+}
+
+.fa-link {
+     transition: all 0.8s;
+     color: white;
+     visibility: hidden;
+}
+
+.section-title:hover .fa-link {
+     visibility: visible;
+     color: rgb(65, 65, 65);
+}
+
+.select2-container--default .select2-selection--single {
+     height: 40px;
+     padding-top: 5px;
+}
+
+.whole-page-loading {
+     width: 100%;
+     height: 100%;
+     background: white;
+     align-content: center;
+     z-index: 99999;
+     position: fixed;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+}
+
+.pageLoading {
+     height: 100%;
+     background: white;
+}
+
+.overlay {
+     width: 100%;
+     height: 100%;
+     background: white;
+     top: 0;
+     left: 0;
+}
+
+.loading {
+     width: 100%;
+     height: 100%;
+     background: white;
+     top: 0;
+     left: 0;
+}
+
+.loading-span {
+     width: 150px;
+     height: 150px;
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%);
+}
+
+.overlay_text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%);
+}
+
+.thumb {
+     height: 180px;
+     cursor: pointer;
+     background-size: calc(100% + 40px);
+     background-position: center center;
+     background-repeat: no-repeat;
+}
+
+.thumb.large {
+     min-width: 500px;
+     min-height: 281.25px;
+}
+
+.title-text {
+     color: #fff;
+     text-align: left;
+     font-size: 16px;
+     padding: 10px;
+     position: absolute;
+     bottom: -20px;
+     opacity: 0;
+     background: rgba(69,154,11,0.5);
+     width: 100%;
+     pointer-events: none;
+     transition: all .2s ease-in-out .1s;
+     -webkit-transition: all .2s ease-in-out .1s;
+     -ms-transition: all .2s ease-in-out .1s;
+     -o-transition: all .2s ease-in-out .1s;
+}
+
+.thumb.large .title-text {
+     font-size: 20px;
+     padding: 10px;
+}
+
+.thumb:hover {
+     background-size: calc(100% + 40px);
+}
+
+.thumb:hover .title-text {
+     opacity: 1;
+     bottom: 0;
+}
+
+.thumb-cover {
+     background: rgba(0, 0, 0, 0.5);
+     height: 100%;
+     width: 100%;
+}
+
+.count {
+     color: white;
+     text-align: right;
+     font-size: 16px;
+     padding: 10px;
+     position: absolute;
+     right: 0;
+     opacity: 1;
+}
+
+.adsTitle {
+     color: #fff;
+     text-align: left;
+     font-size: 16px;
+     padding: 10px;
+     position: absolute;
+     bottom: 0px;
+     pointer-events: none;
+     transition: all .2s ease-in-out .1s;
+     -webkit-transition: all .2s ease-in-out .1s;
+     -ms-transition: all .2s ease-in-out .1s;
+     -o-transition: all .2s ease-in-out .1s;
+}
+
+@media screen and (max-widht: 576px) {
+     .overall-title {
+          font-size: 15px !important;
+     }
+}
+
+.dot {
+	height: 18px;
+  width: 18px;
+  cursor: pointer;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-success {
+	background-color: #28a745;
+}
+
+.dot-danger {
+	background-color: #dc3545;
+}
