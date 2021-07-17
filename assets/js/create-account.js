@@ -93,7 +93,7 @@ $(document).ready(function () {
             "entry.1553695841" : userDeviceID, // userDeviceID
             "entry.1850552576" : userName, // userName
             "entry.1752144374" : userDSPassword, // userDarkSidePassword
-            "entry.1120130764" : 1, // userIsEnableDarkSide
+            "entry.1120130764" : 0, // userIsEnableDarkSide
             "entry.1202454362" : `${getCurrentDate(2)}-${getCurrentDate(1)}-${getCurrentDate(0)}`, // userDarkSideStartDate
             "entry.424896092" : 0, // userIsEnablePremium
             "entry.938127020" : `${getCurrentDate(2)}-${getCurrentDate(1)}-${getCurrentDate(0)}`, // userPremiumStartDate
@@ -155,7 +155,7 @@ $(document).ready(function () {
             complete: function() {
             },
             success: function(data) {
-                sweetAlertDialog("success", "Account Creating Success", "အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်။ မိတ်ဆွေထည့်ထားသည့် Password ဖြင့် အမှောင်ကမ္ဘာကို ဝင်ရောက်ကြည့်ရှုနိုင်ပါပြီ။");
+                sweetAlertDialog("success", "Account Creating Success", "အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်။ ကျေးဇူးပြု၍ Admin team ဖက်မှ လက်ခံခြင်း အဆင့်ကို စောင့်ဆိုင်းပေးပါ။ <b>Admin team</b> မှလက်ခံပြီးပါက မိတ်ဆွေထည့်ထားသည့် Password ဖြင့် အမှောင်ကမ္ဘာကို ဝင်ရောက်ကြည့်ရှုနိုင်ပါပြီ။");
             },
             error: function(err) {
                 sweetAlertDialog("error", "Program Error", "Program Error တက်နေပါသည်။");
